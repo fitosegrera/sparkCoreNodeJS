@@ -3,8 +3,14 @@ sparkCoreNodeJS
 
 Application to talk to the spark-core board using nodeJS, the spark-io module and voodoospark. This Repository is directed towards the first technical prototype of my MFADT thesis at Parsons, The New School NYC.
 
-###Talking to the spark core
-__GET ACCESS TOKEN__</br>
+####DEPENDENCIES
+*[nodeJS](http://nodejs.org/)
+*[spark-io](https://www.npmjs.org/package/spark-io)
+*[voodospark](http://voodoospark.me/)
+
+###TALKING TO THE SPARK-CORE
+__GET ACCESS TOKEN__
+
 The following command uses the spark-API to call the board and GET an acces token:
 
 	curl https://api.spark.io/oauth/token -u spark:spark -d grant_type=password -d username=<EMAIL> -d password=<PASSWORD>
@@ -12,7 +18,8 @@ The following command uses the spark-API to call the board and GET an acces toke
 __Note:__ Replace <EMAIL> and <PASSWORD> with the email address and password you use  for login into [spark.io's WEB IDE](http://spark.io/build)
 
 
-__HTTP REQUEST TO THE API__</br>
+__HTTP REQUEST TO THE API__
+
 Use the following command to do an http request to the spark-cloud API:
 
 	curl "https://api.spark.io/v1/devices/{DEVICE-ID}/endpoint?access_token={ACCESS-TOKEN}"
