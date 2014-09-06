@@ -4,9 +4,9 @@ sparkCoreNodeJS
 Application to talk to the spark-core board using nodeJS, the spark-io module and voodoospark. This Repository is directed towards the first technical prototype of my MFADT thesis at Parsons, The New School NYC.
 
 ####DEPENDENCIES
-*[nodeJS](http://nodejs.org/)
-*[spark-io](https://www.npmjs.org/package/spark-io)
-*[voodospark](http://voodoospark.me/)
+* [nodeJS](http://nodejs.org/)
+* [spark-io](https://www.npmjs.org/package/spark-io)
+* [voodospark](http://voodoospark.me/)
 
 ###TALKING TO THE SPARK-CORE
 __GET ACCESS TOKEN__
